@@ -77,8 +77,12 @@ namespace ChinarConsole
 
         void Update()
         {
-            if (Input.GetKeyDown(ShortcutKey)) visible = !visible;
-            if (ShakeToOpen && Input.acceleration.sqrMagnitude > shakeAcceleration) visible = true;
+            if (_gameManager.debugMode)
+            {
+                if (Input.GetKeyDown(ShortcutKey)) visible = !visible;
+                if (ShakeToOpen && Input.acceleration.sqrMagnitude > shakeAcceleration) visible = true;
+            }
+                
 
         }
 

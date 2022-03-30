@@ -501,7 +501,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7CBE\u82F1\u7164\u77FF\u667A\u6167\u5E73\u53F0"
+  m_Text: "\u667A\u6167\u5E73\u53F0"
 --- !u!222 &282913239
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1103,20 +1103,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8926765353198604750, guid: 06b08f8624765a642950034bab27bcfc,
+    - target: {fileID: 8926765352940600169, guid: 06b08f8624765a642950034bab27bcfc,
         type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8926765353198604750, guid: 06b08f8624765a642950034bab27bcfc,
+    - target: {fileID: 8926765352940600169, guid: 06b08f8624765a642950034bab27bcfc,
         type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 8926765353198604751, guid: 06b08f8624765a642950034bab27bcfc,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 0
+      propertyPath: ShortcutKey
+      value: 102
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06b08f8624765a642950034bab27bcfc, type: 3}

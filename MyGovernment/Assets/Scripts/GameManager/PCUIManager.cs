@@ -18,6 +18,7 @@ public class PCUIManager : Define
     {
         _gameManager._PCUIManager = this;
     }
+    //UI界面的动画。
     public void Showlist(bool showList)
     {
         ani.SetBool("ShowList", showList);

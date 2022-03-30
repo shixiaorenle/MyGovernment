@@ -98,6 +98,7 @@ public class HouseMain : Define
 
     public void OpenControl(Hashtable hashtable)
     {
+        Debug.Log(11111);
         _MtoggleType = ToggleType.none;
         firstInitControl = true;
         firstInitRecord = true;

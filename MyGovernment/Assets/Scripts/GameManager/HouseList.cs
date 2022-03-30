@@ -64,7 +64,6 @@ public class HouseList : Define
 
                     PressDetail(item.GetComponent<HouseItem>());
                 });
-
             }
         }
 
@@ -75,6 +74,7 @@ public class HouseList : Define
         _playerCache._playerData.myBoxNum = houseitem.boxNumber;
         _gameManager._PCUIManager.Showlist(false);
         _gameManager._PCUIManager.houseMain.OpenControl(houseitem.AData);
+
         //onClose();
     }
     public void PressDetail(HouseItem houseitem)

@@ -18,7 +18,7 @@ public class GameManager : Define
 {
 	
 	public bool deletePlayerPrefs 									= false;
-
+    public bool debugMode = false;
 
 
 
@@ -151,41 +151,41 @@ public class GameManager : Define
     private void Update() 
 	{
 
-        if (Input.GetKeyDown(KeyCode.Escape))//返回按钮
-        {
-            //kAlertTypes nowType = _playerCache._playerData.alertTypes[_playerCache._playerData.alertTypes.Count - 1];
-            if (_maskLayer.Windows.Count<1)
-            {
-                return;
-            }
+        //if (Input.GetKeyDown(KeyCode.Escape))//返回按钮
+        //{
+        //    //kAlertTypes nowType = _playerCache._playerData.alertTypes[_playerCache._playerData.alertTypes.Count - 1];
+        //    if (_maskLayer.Windows.Count<1)
+        //    {
+        //        return;
+        //    }
            
-            GameObject o = _maskLayer.Windows[_maskLayer.Windows.Count - 1];
-            if (o.name.Contains("LoadingAlert"))
-            {
-                return;
-            }
-            else if (o.name.Contains("UITIps")|| o.name.Contains("UIMSG"))
-            {
-                return;
-            }
-            else if(o.name.Contains("Center"))
-            {
-                return;
-            }
-            else if(o.name.Contains("WarningList(Clone)")|| o.name.Contains("record(Clone)")|| o.name.Contains("Control(Clone)")|| o.name.Contains("SetUI(Clone)") || o.name.Contains("data(Clone)"))
-            {
-                _dataManager.GetUserGreenHouseList();
-            }
-            else
-            {
-                Hashtable hashtable = new Hashtable();
-                hashtable["name"] = o.name;
-                Debug.Log(o.name);
-                PostNotification(kNotificationKeys.androidReturn, hashtable);
-            }
+        //    GameObject o = _maskLayer.Windows[_maskLayer.Windows.Count - 1];
+        //    if (o.name.Contains("LoadingAlert"))
+        //    {
+        //        return;
+        //    }
+        //    else if (o.name.Contains("UITIps")|| o.name.Contains("UIMSG"))
+        //    {
+        //        return;
+        //    }
+        //    else if(o.name.Contains("Center"))
+        //    {
+        //        return;
+        //    }
+        //    else if(o.name.Contains("WarningList(Clone)")|| o.name.Contains("record(Clone)")|| o.name.Contains("Control(Clone)")|| o.name.Contains("SetUI(Clone)") || o.name.Contains("data(Clone)"))
+        //    {
+        //        _dataManager.GetUserGreenHouseList();
+        //    }
+        //    else
+        //    {
+        //        Hashtable hashtable = new Hashtable();
+        //        hashtable["name"] = o.name;
+        //        Debug.Log(o.name);
+        //        PostNotification(kNotificationKeys.androidReturn, hashtable);
+        //    }
             
 
-        }
+        //}
 
     }
 
