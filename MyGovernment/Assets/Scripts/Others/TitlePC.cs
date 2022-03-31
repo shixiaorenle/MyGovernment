@@ -33,6 +33,10 @@ public class TitlePC : Define
     {
         _maskLayer.ShowAlertOnly(kAlertTypes.Set);
     }
+    public   void OnClickSuggest()
+    {
+        _maskLayer.ShowAlertOnly(kAlertTypes.MessageBoard);
+    }
     void Update()
     {
         
